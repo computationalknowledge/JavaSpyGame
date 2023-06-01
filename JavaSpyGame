@@ -36,7 +36,7 @@ public class PlayTheGame {
     public PlayTheGame() {
         hero = new Hero("Spy Peanut", 100);
         villain = new Villain("Herr Wolf", 200);
-        furSquad = new FurSquad(new String[]{"Agent 1", "Agent 2", "Agent 3"}, new int[]{80, 90, 85});
+        furSquad = new FurSquad(new String[]{"Ace", "Shadow", "Blaze"}, new int[]{80, 90, 85});
         EvilSpyHeadQuarters = new SpyHeadquarters("Secret Hideout");
     }
 
@@ -48,7 +48,7 @@ public class PlayTheGame {
         EvilSpyHeadQuarters.displayLocation();
         // Other game initialization logic
 
-        // Encouragement from Peanut: "Get ready, Agent! The mission awaits!"
+        System.out.println(" from Peanut:  Get ready, Agent! The mission awaits!");
     }
 
     public void gameLoop() {
