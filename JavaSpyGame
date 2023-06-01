@@ -22,21 +22,22 @@ class SpyPeanut extends Hero {
     // Other methods specific to Spy Peanut
 }
 
-public class GameLogic {
+public class PlayTheGame {
     private Hero hero;
     private Villain villain;
     private FurSquad furSquad;
-    private SpyHeadquarters gameWorld;
+    private SpyHeadquarters EvilSpyHeadQuarters;
 
     public static void main(String [] args) {
-    	System.out.println("starting game");
+    	PlayTheGame game = new PlayTheGame();
+    	game.startGame();
     }
     
-    public GameLogic() {
+    public PlayTheGame() {
         hero = new Hero("Spy Peanut", 100);
         villain = new Villain("Herr Wolf", 200);
         furSquad = new FurSquad(new String[]{"Agent 1", "Agent 2", "Agent 3"}, new int[]{80, 90, 85});
-        gameWorld = new SpyHeadquarters("Secret Hideout");
+        EvilSpyHeadQuarters = new SpyHeadquarters("Secret Hideout");
     }
 
     public void startGame() {
@@ -44,7 +45,7 @@ public class GameLogic {
         hero.displayInfo();
         villain.displayInfo();
         furSquad.displayInfo();
-        gameWorld.displayLocation();
+        EvilSpyHeadQuarters.displayLocation();
         // Other game initialization logic
 
         // Encouragement from Peanut: "Get ready, Agent! The mission awaits!"
